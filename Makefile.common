@@ -2,5 +2,5 @@
 PROJECT_NAME   = Nessy
 VERSION        = 0.1.0
 GLOBAL_TARGET  = $(PROJECT_NAME)-$(VERSION)
-DESCRIPTION    = Small C++ library for enumerating and counting perfect binary trees
+DESCRIPTION    = Small C++ library for enumerating, generating and counting perfect binary trees
 AUTHORS        = Nicolas Lermé
