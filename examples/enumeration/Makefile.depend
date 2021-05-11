@@ -1,0 +1,9 @@
+../../obj/enumeration.o: enumeration.cpp ../../core/include/nessy.h \
+ ../../core/include/nessy_types.h ../../core/include/nessy_string_utils.h \
+ ../../core/include/nessy_algebra.h ../../core/include/nessy_random.h \
+ ../../core/include/nessy_singleton.h \
+ ../../core/include/nessy_singleton_base.h \
+ ../../core/include/nessy_singleton_manager.h \
+ ../../core/include/nessy_node.h ../../core/include/nessy_binary_tree.h \
+ ../../core/include/nessy_time.h ../../core/include/nessy_calculus.h \
+ ../../core/include/nessy_logger.h
