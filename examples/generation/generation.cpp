@@ -17,17 +17,19 @@ int main( const int Argc, char ** Argv )
 	if( Argc != 2 )
 	{
 		Logger->Write("Usage: "+Nessy::StringUtils::ToString(Argv[0])+" number-of-nodes\n\n");
-		Logger->Write("number-of-nodes: positive integer\n");
+		Logger->Write("number-of-nodes: odd positive integer\n");
 		return EXIT_FAILURE;
 	}
 
 	NumberOfNodes = atoi(Argv[1]);
 
-	if( NumberOfNodes<=0 )
+	if( NumberOfNodes<=0 || Nessy::Algebra::Modulo(NumberOfNodes, 2) == 0 )
 	{
-		Logger->Write("Error: the number of nodes must be positive integer\n");
+		Logger->Write("Error: the number of nodes must be an odd integer\n");
 		return EXIT_FAILURE;
 	}
+
+	std::cout << NumberOfNodes << '\n';
 
 	// We print the generated tree
 	Logger->Write("[ Random generation of perfect binary trees ]\n");
