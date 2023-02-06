@@ -39,7 +39,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.$(FILES_EXT)
 
 clean: header
 	@echo -n "  + Delete objects and bin : "
-	@rm -rf $(LOCAL_TARGET) $(OBJ)
+	@\rm -rf $(LOCAL_TARGET) $(OBJ)
 	@echo "OK"
 
 footer:

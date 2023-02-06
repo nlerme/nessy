@@ -21,6 +21,10 @@ header:
 	@echo "[ Core ]"
 
 depend:
+ifeq ("$(wildcard $(OBJ_DIR))","")
+	@mkdir $(OBJ_DIR)
+	@mkdir $(OUTPUT_DIR)
+endif
 	@echo -n "  + Generate dependencies : "
 ifneq ($(strip $(SRC)),)
 	@$(CXX) $(INCS) -MM $(SRC:%=$(SRC_DIR)/%) \
@@ -47,7 +51,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.$(SRC_FILES_EXT)
 
 clean: header
 	@echo -n "  + Delete objects and libraries : "
-	@rm -rf $(OBJ) $(OUTPUT_DIR)/lib$(GLOBAL_TARGET)*
+	@\rm -rf $(OBJ_DIR) $(OUTPUT_DIR)
 	@echo "OK"
 
 footer:

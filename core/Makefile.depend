@@ -1,25 +1,25 @@
-../obj/nessy_random.o: src/nessy_random.cpp include/nessy_random.h \
- include/nessy_types.h include/nessy_singleton.h \
+../obj/nessy_algebra.o: src/nessy_algebra.cpp include/nessy_algebra.h \
+ include/nessy_types.h include/nessy_random.h include/nessy_singleton.h \
  include/nessy_singleton_base.h include/nessy_singleton_manager.h
+../obj/nessy_binary_tree.o: src/nessy_binary_tree.cpp \
+ include/nessy_binary_tree.h include/nessy_node.h include/nessy_types.h \
+ include/nessy_algebra.h
 ../obj/nessy_calculus.o: src/nessy_calculus.cpp include/nessy_algebra.h \
  include/nessy_types.h include/nessy_random.h include/nessy_singleton.h \
  include/nessy_singleton_base.h include/nessy_singleton_manager.h \
  include/nessy_calculus.h include/nessy_node.h
-../obj/nessy_algebra.o: src/nessy_algebra.cpp include/nessy_algebra.h \
- include/nessy_types.h include/nessy_random.h include/nessy_singleton.h \
- include/nessy_singleton_base.h include/nessy_singleton_manager.h
-../obj/nessy_time.o: src/nessy_time.cpp include/nessy_time.h \
- include/nessy_types.h
-../obj/nessy_binary_tree.o: src/nessy_binary_tree.cpp \
- include/nessy_binary_tree.h include/nessy_node.h include/nessy_types.h \
- include/nessy_algebra.h
-../obj/nessy_node.o: src/nessy_node.cpp include/nessy_node.h \
- include/nessy_types.h
 ../obj/nessy_logger.o: src/nessy_logger.cpp include/nessy_logger.h \
  include/nessy_singleton.h include/nessy_singleton_base.h \
  include/nessy_singleton_manager.h include/nessy_types.h
+../obj/nessy_node.o: src/nessy_node.cpp include/nessy_node.h \
+ include/nessy_types.h
+../obj/nessy_random.o: src/nessy_random.cpp include/nessy_random.h \
+ include/nessy_types.h include/nessy_singleton.h \
+ include/nessy_singleton_base.h include/nessy_singleton_manager.h
+../obj/nessy_singleton_base.o: src/nessy_singleton_base.cpp \
+ include/nessy_singleton_base.h
 ../obj/nessy_singleton_manager.o: src/nessy_singleton_manager.cpp \
  include/nessy_singleton_base.h include/nessy_singleton_manager.h \
  include/nessy_types.h
-../obj/nessy_singleton_base.o: src/nessy_singleton_base.cpp \
- include/nessy_singleton_base.h
+../obj/nessy_time.o: src/nessy_time.cpp include/nessy_time.h \
+ include/nessy_types.h

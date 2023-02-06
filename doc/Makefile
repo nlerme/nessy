@@ -14,7 +14,7 @@ header:
 clean: header
 	@echo -n "  + Delete doc : "
 	@for Dir in $(DOCS_DIRS); do \
-		rm -rf $$Dir/*; \
+		\rm -rf $$Dir/*; \
 	done
 	@echo "OK"
 
